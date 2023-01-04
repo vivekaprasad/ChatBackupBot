@@ -4,12 +4,13 @@ from pyrogram.types import Message
 import os
 
 
-TOKEN="5923062549:AAHflO6_m1vY6DlTI5lvgQuaZ6akaotQA88"
-session="BQAyUG0mSwxhVFli6wkfoBQeZ4eXvKsJjtX8I5Nc_4eqHZO8-ef5L9m5pQojapQBx2MpDE8iDD6OPMvYlIoSjy3WdKs5KudNXN3fCoj-jRh6tF3iwI8J-EZjDy1hgyrYMUCxOl50OnKrwW3Bb7XK-2G-TBwLQboJbrXln-50dWLPRP44n-j5iI4OHEFbK9Wd84gbV9Oe2gEV-eBYUxsccXSxQzf4NjX6XE_0euJKdgMs4XChztvLjWOxD-olyRtexshlMHIDXssdyW4HJzix1oiXUFVhn0agVJH0O4wwaaj8-aTihdSkWsDOpl2N0tr2L1hfLFU4-D3UP56tJlIWhPXQSuAgXQA"
-api_id =4068941
-api_hash ="4b8c69be3975bd027042127fc337867a"
-log_channel="-1001841565100"
-myuserid="@PUBUDUPRASAD"
+
+TOKEN=os.getenv("BOT_TOKEN")
+session=os.getenv("SESSION")
+api_id = int(os.getenv("API_ID"))
+api_hash = os.getenv("API_HASH")
+log_channel=os.getenv("LOG_CHANNEL")
+myuserid=os.getenv("OWNER_UNAME")
 
 BOT_url='https://api.telegram.org/bot'+TOKEN
 app=Client('CharindithBAckupBot', api_id,api_hash,session_string=session)
