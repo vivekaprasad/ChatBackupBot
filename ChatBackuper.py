@@ -100,5 +100,5 @@ async def msg_document(client: Client, message: Message):
 		await dirup(message,pat,tgapi,otherr)
 
 
-print('bot started\nBy @charindith')
+print('bot started')
 app.run()
